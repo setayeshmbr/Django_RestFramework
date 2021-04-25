@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+{% block main %}
+<div>
+    {% for do in object_list %}
+        <h2>{{ do.title }}</h2>
+        <p>{{ do.content }}</p>
+        <small>{{ do.author }}</small>
+        <small>{{ do.publish }}</small>
+    {% endfor %}
+</div>
+{% endblock %}
